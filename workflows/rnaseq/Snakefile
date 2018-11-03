@@ -809,7 +809,11 @@ rule bigwig_neg:
         '--minMappingQuality 20 '
         '--ignoreDuplicates '
         '--smoothLength 10 '
-        '--filterRNAstrand forward '
+
+        # Using this instead of --filterRNAstrand since the latter makes
+        # assumptions about library prep
+        '--samFlagInclude 16 '
+
         '--normalizeUsing BPM '
         '&> {log}'
 
@@ -835,7 +839,10 @@ rule bigwig_pos:
         '--minMappingQuality 20 '
         '--ignoreDuplicates '
         '--smoothLength 10 '
-        '--filterRNAstrand reverse '
+
+        # Using this instead of --filterRNAstrand since the latter makes
+        # assumptions about library prep
+        '--samFlagExclude 16 '
         '--normalizeUsing BPM '
         '&> {log}'
 
