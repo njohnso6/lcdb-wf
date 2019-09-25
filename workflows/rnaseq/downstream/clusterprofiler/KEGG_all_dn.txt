@@ -1,0 +1,2 @@
+ID	Description	GeneRatio	BgRatio	pvalue	p.adjust	qvalue	geneID	Count
+dme03018	RNA degradation	1/1	58/3200	0.0181249999999998	0.0181249999999998	NA	Hsp60B	1
