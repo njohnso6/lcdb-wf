@@ -1,0 +1,409 @@
+
+
+processing file: rnaseq.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   3%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |...                                                              |   5%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: global_options (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |.....                                                            |   8%
+   inline R code fragments
+
+  |                                                                         |......                                                           |   9%
+label: imports
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:parallel':
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    anyDuplicated, append, as.data.frame, basename, cbind,
+    colMeans, colnames, colSums, dirname, do.call, duplicated,
+    eval, evalq, Filter, Find, get, grep, grepl, intersect,
+    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
+    Reduce, rowMeans, rownames, rowSums, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which, which.max,
+    which.min
+
+
+Attaching package: 'S4Vectors'
+
+The following object is masked from 'package:base':
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: 'matrixStats'
+
+The following objects are masked from 'package:Biobase':
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: 'DelayedArray'
+
+The following objects are masked from 'package:matrixStats':
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from 'package:base':
+
+    aperm, apply
+
+
+Attaching package: 'gridExtra'
+
+The following object is masked from 'package:Biobase':
+
+    combine
+
+The following object is masked from 'package:BiocGenerics':
+
+    combine
+
+
+Attaching package: 'genefilter'
+
+The following objects are masked from 'package:matrixStats':
+
+    rowSds, rowVars
+
+
+Attaching package: 'readr'
+
+The following object is masked from 'package:genefilter':
+
+    spec
+
+
+clusterProfiler v3.10.1  For help: https://guangchuangyu.github.io/software/clusterProfiler
+
+If you use clusterProfiler in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Yanyan Han, Qing-Yu He. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology. 2012, 16(5):284-287.
+
+Attaching package: 'clusterProfiler'
+
+The following object is masked from 'package:DelayedArray':
+
+    simplify
+
+
+Attaching package: 'AnnotationHub'
+
+The following object is masked from 'package:Biobase':
+
+    cache
+
+ReactomePA v1.26.0  For help: https://guangchuangyu.github.io/ReactomePA
+
+If you use ReactomePA in published research, please cite:
+Guangchuang Yu, Qing-Yu He. ReactomePA: an R/Bioconductor package for reactome pathway analysis and visualization. Molecular BioSystems 2016, 12(2):477-479
+
+********************************************************
+Note: As of version 1.0.0, cowplot does not change the
+  default ggplot2 theme anymore. To recover the previous
+  behavior, execute:
+  theme_set(theme_cowplot())
+********************************************************
+
+  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ child: chr "helpers.Rmd"
+
+
+
+processing file: ./helpers.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-15
+
+  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: annotationhub_setup
+snapshotDate(): 2018-10-24
+downloading 0 resources
+loading from cache 
+    '../../../include/AnnotationHubCache/72901'
+Loading required package: AnnotationDbi
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  18%
+label: coldata_setup
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  21%
+label: unnamed-chunk-3
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  24%
+label: salmon
+reading in files with read_tsv
+1 2 3 4 
+  |                                                                         |.................                                                |  26%
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  27%
+label: ddstxi (with options) 
+List of 2
+ $ cache: logi TRUE
+ $ eval : logi TRUE
+
+  |                                                                         |...................                                              |  29%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  30%
+label: dds_initial (with options) 
+List of 1
+ $ cache: logi TRUE
+
+  |                                                                         |.....................                                            |  32%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  33%
+label: unnamed-chunk-4
+  |                                                                         |.......................                                          |  35%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  36%
+label: unnamed-chunk-5 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  39%
+label: unnamed-chunk-6 (with options) 
+List of 1
+ $ fig.height: num 12
+
+  |                                                                         |...........................                                      |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  42%
+label: unnamed-chunk-7
+  |                                                                         |.............................                                    |  44%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  45%
+label: unnamed-chunk-8
+  |                                                                         |...............................                                  |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  48%
+label: dds_models (with options) 
+List of 1
+ $ cache: logi TRUE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................                                |  52%
+label: results (with options) 
+List of 1
+ $ cache: logi TRUE
+
+  |                                                                         |..................................                               |  53%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  55%
+label: attach (with options) 
+List of 2
+ $ cache  : logi TRUE
+ $ depends: chr "results"
+
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  58%
+label: unnamed-chunk-9 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................................                           |  59%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  61%
+label: unnamed-chunk-10 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |........................................                         |  62%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  64%
+label: unnamed-chunk-11 (with options) 
+List of 2
+ $ fig.width: num 12
+ $ results  : chr "asis"
+
+  |                                                                         |..........................................                       |  65%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: dpsettings
+  |                                                                         |............................................                     |  68%
+   inline R code fragments
+
+  |                                                                         |.............................................                    |  70%
+label: unnamed-chunk-12 (with options) 
+List of 3
+ $ fig.width: num 12
+ $ results  : chr "asis"
+ $ cache    : logi TRUE
+
+  |                                                                         |..............................................                   |  71%
+  ordinary text without R code
+
+  |                                                                         |...............................................                  |  73%
+label: selections
+  |                                                                         |................................................                 |  74%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  76%
+label: cprof_setup (with options) 
+List of 1
+ $ results: chr "hide"
+
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: bitr_genes (with options) 
+List of 1
+ $ results: chr "hide"
+
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  82%
+label: enrich_all (with options) 
+List of 2
+ $ results: chr "hide"
+ $ cache  : logi TRUE
+
+  |                                                                         |......................................................           |  83%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  85%
+label: adjust_catlen
+  |                                                                         |........................................................         |  86%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_go (with options) 
+List of 3
+ $ fig.width : num 15
+ $ fig.height: num 10
+ $ results   : chr "asis"
+
+Using `nicely` as default layout
+  |                                                                         |..........................................................       |  89%
+  ordinary text without R code
+
+  |                                                                         |...........................................................      |  91%
+label: groupcounts (with options) 
+List of 2
+ $ cache: logi TRUE
+ $ eval : logi FALSE
+
+  |                                                                         |............................................................     |  92%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: unnamed-chunk-13 (with options) 
+List of 2
+ $ results: chr "asis"
+ $ eval   : logi FALSE
+
+  |                                                                         |..............................................................   |  95%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  97%
+label: unnamed-chunk-14 (with options) 
+List of 1
+ $ collapse: logi FALSE
+
+  |                                                                         |................................................................ |  98%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: helpdocs (with options) 
+List of 2
+ $ child     : chr "help_docs.Rmd"
+ $ run_pandoc: logi FALSE
+
+
+
+processing file: ./help_docs.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+
+output file: rnaseq.knit.md
+
+/home/johnsonnicl/Desktop/lcdb-wf/lcdb-wf/env/bin/pandoc +RTS -K512m -RTS rnaseq.utf8.md --to html4 --from markdown-hard_line_breaks+superscript+tex_math_dollars+raw_html+markdown_in_html_blocks-implicit_figures --output rnaseq.html -H /tmp/RtmpPalXuA/knitr_bootstrap_full.html 
+[WARNING] This document format requires a nonempty <title> element.
+  Please specify either 'title' or 'pagetitle' in the metadata,
+  e.g. by using --metadata pagetitle="..." on the command line.
+  Falling back to 'rnaseq.utf8'
+
+Output created: rnaseq.html
+Warning messages:
+1: In call_block(x) :
+  The chunk 'unnamed-chunk-2' has the 'child' option, and this code chunk must be empty. Its code will be ignored.
+2: In FUN(X[[i]], ...) : 9.09% of input gene IDs are fail to map...
+3: In call_block(x) :
+  The chunk 'helpdocs' has the 'child' option, and this code chunk must be empty. Its code will be ignored.
