@@ -552,7 +552,7 @@ found in each cluster are reported below the plot.
 
 The default general flow is as follows:
 
-```{r dpsettings}
+```{r dpsettings, cache=TRUE}
 
 # NOTE: settings for DEGpatterns-----------------------------------------------
 #  These parameters are set up here because we will be providing them to
@@ -594,7 +594,7 @@ low.minc <- 1
   more, they are merged together
 - Clusters with fewer than `r minc` genes are not shown.
 
-```{r, fig.width=12, results='asis', cache=TRUE}
+```{r, fig.width=12, results='asis', cache=TRUE, dependson='dpsettings'}
 # NOTE: which genes to cluster?------------------------------------------------
 #    By default, we get all the changed genes, but you may want only the up or
 #    down genes.
