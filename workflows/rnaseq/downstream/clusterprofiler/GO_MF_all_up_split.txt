@@ -1,0 +1,5 @@
+ID	Description	GeneRatio	BgRatio	pvalue	p.adjust	qvalue	geneID	Count	geneParse
+GO:0016810	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds	1/3	92/12054	0.0227245221875875	0.0908980887503499	0.0717616490134341	Cda5	1	Cda5
+GO:0000981	DNA-binding transcription factor activity, RNA polymerase II-specific	1/3	295/12054	0.0716432537484188	0.116153723183033	0.0917003077760788	Ets21C	1	Ets21C
+GO:0003700	DNA-binding transcription factor activity	1/3	469/12054	0.112251030941936	0.116153723183033	0.0917003077760788	Ets21C	1	Ets21C
+GO:0043565	sequence-specific DNA binding	1/3	486/12054	0.116153723183033	0.116153723183033	0.0917003077760788	Ets21C	1	Ets21C
